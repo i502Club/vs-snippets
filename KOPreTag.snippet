@@ -1,0 +1,21 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>koPre</Title>
+    <Author>i502club</Author>
+    <Shortcut>KoPreTag</Shortcut>
+    <Description>Markup snippet for ko pre tag</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>data</ID>
+        <ToolTip>src</ToolTip>
+        <Default>$data</Default>
+      </Literal>
+    </Declarations>    
+	<Code Language="html"><![CDATA[<pre data-bind="text: ko.toJSON($data$, null, 2)"></pre>$end$]]></Code>
+  </Snippet>
+</CodeSnippet>

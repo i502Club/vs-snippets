@@ -1,0 +1,21 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>KOSelect</Title>
+    <Author>i502club</Author>
+    <Shortcut>KOSelect</Shortcut>
+    <Description>Markup snippet for Knockout select binding.  Wired for change event. Expects vm to have change handler & selectedItemId computed func.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>data</ID>
+        <ToolTip>src</ToolTip>
+        <Default>$data</Default>
+      </Literal>
+    </Declarations>    
+	<Code Language="html"><![CDATA[<select name="myInputName" class="form-control" data-bind="event:{change : itemChanged}, options: items, optionsText: function(item) { return ko.unwrap(item.Name) + ' ' + ko.unwrap(item.Id); }, optionsValue: 'Id', value: selectedItemId"></select>$end$]]></Code>
+  </Snippet>
+</CodeSnippet>
